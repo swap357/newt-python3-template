@@ -34,4 +34,4 @@ RUN chown -R app:app ./
 USER app
 
 ENTRYPOINT ["python3"]
-CMD ["server.py"]
+CMD ["index.py"]
