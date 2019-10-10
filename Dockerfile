@@ -1,7 +1,5 @@
 FROM python:3.7
 
-RUN chmod +x /usr/bin/fwatchdog
-
 ARG ADDITIONAL_PACKAGE
 RUN apt-get update && apt-get install -y musl-dev gcc make ${ADDITIONAL_PACKAGE}
 RUN apt-get install -y python-scipy
